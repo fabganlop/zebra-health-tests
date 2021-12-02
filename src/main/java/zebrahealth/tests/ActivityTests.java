@@ -35,10 +35,10 @@ public class ActivityTests {
         DesiredCapabilities capabilities = new DesiredCapabilities();
         capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, AutomationName.IOS_XCUI_TEST);
         capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, MobilePlatform.IOS);
-        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.0");
-        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "iPhone");
-        capabilities.setCapability(MobileCapabilityType.UDID, "00000000-0000000000000000");
-        capabilities.setCapability(MobileCapabilityType.APP, "/Path/To/An/Application.ipa");
+        capabilities.setCapability(MobileCapabilityType.PLATFORM_VERSION, "14.3");
+        capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Fabian's iPhone XR");
+        capabilities.setCapability(MobileCapabilityType.UDID, "00008020-0009288C2693802E");
+        capabilities.setCapability(MobileCapabilityType.APP, "/Users/fg0620/apps/ZebraHealth.ipa");
 
         // Driver is the proxy between our script and the phone
         driver = new IOSDriver(appiumLocalService, capabilities);

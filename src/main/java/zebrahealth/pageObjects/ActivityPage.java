@@ -58,7 +58,10 @@ public class ActivityPage {
     public void setTextToNumberOfTrotsTextField(String text) { numberOfTrotsTextField.sendKeys(text); }
     public void clickOnNumberOfTrotsTextField() { numberOfTrotsTextField.click(); }
     public void clickOnAddActivityButton() { addActivityButton.click(); }
-    public void clickOnAddButton() { addButton.click(); }
+    public void clickOnAddButton() {
+        addButton.click();
+        activities++;
+    }
 
     public void clickOnActivity(int noOfActivity) throws InterruptedException {
         int width  = driver.manage().window().getSize().width;
